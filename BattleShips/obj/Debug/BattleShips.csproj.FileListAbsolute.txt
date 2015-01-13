@@ -1,0 +1,16 @@
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\bin\Debug\BattleShips.exe.config
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Cirlce.baml
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\MainWindow.baml
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Cirlce.g.cs
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\MainWindow.g.cs
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\App.g.cs
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips_MarkupCompile.cache
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.g.resources
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.Properties.Resources.resources
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.csproj.GenerateResource.Cache
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips_MarkupCompile.lref
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\bin\Debug\BattleShips.exe
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\bin\Debug\BattleShips.pdb
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.exe
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.pdb
