@@ -38,13 +38,26 @@ namespace BattleShips
             if (e.Handled == false)
             {
                 Panel _panel = (Panel)sender;
-                UIElement _element = (UIElement)e.Data.GetData("Object");
+                Ship _element = (Ship)e.Data.GetData("Object");
+
+                // update statusbar with mouse position
+                TextBlockStatusBar.Text = e.GetPosition(_panel).ToString();
+                
 
                 if (_panel != null && _element != null)
                 {
                     // Get the panel that the element currently belongs to, 
                     // then remove it from that panel and add it the Children of 
                     // the panel that its been dropped on.
+                
+                    //remove margin
+                    _element.Margin = new Thickness(0); 
+
+                    Canvas.SetLeft(_element, (int)(e.GetPosition(_panel).X / 40) * 40);
+                    Canvas.SetTop(_element, (int)(e.GetPosition(_panel).Y / 40) * 40);
+                            
+                    
+                    
                     Panel _parent = (Panel)VisualTreeHelper.GetParent(_element);
 
                     if (_parent != null)
@@ -52,8 +65,10 @@ namespace BattleShips
                         if (e.KeyStates == DragDropKeyStates.ControlKey &&
                             e.AllowedEffects.HasFlag(DragDropEffects.Copy))
                         {
-                            Cirlce _circle = new Cirlce((Cirlce)_element);
-                            _panel.Children.Add(_circle);
+                            UserControl userControl = new UserControl();_panel.Children.Add(userControl);
+
+                            // Set position to match grid in canvas
+                           
                             // set the value to return to the DoDragDrop call
                             e.Effects = DragDropEffects.Copy;
                         }
@@ -70,5 +85,6 @@ namespace BattleShips
 
             
         }
-    }
+
+   }
 }

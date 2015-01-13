@@ -1,8 +1,4 @@
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\bin\Debug\BattleShips.exe.config
-C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Cirlce.baml
-C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\MainWindow.baml
-C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Cirlce.g.cs
-C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\MainWindow.g.cs
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\App.g.cs
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips_MarkupCompile.cache
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.g.resources
@@ -15,3 +11,11 @@ C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\bin\Debug\BattleShips.pdb
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.exe
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.pdb
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\BattleShips.csprojResolveAssemblyReference.cache
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\Cirlce.baml
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\Destroyer.baml
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\Cirlce.g.cs
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\Destroyer.g.cs
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\MainWindow.baml
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\Ship.baml
+C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\Ship.g.cs
