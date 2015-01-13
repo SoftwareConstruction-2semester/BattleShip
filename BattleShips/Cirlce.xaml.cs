@@ -68,5 +68,68 @@ namespace BattleShips
             }
         }
 
+        protected override void OnDrop(DragEventArgs e)
+        {
+            base.OnDrop(e);
+
+            // If the DataObject contains string data, extract it. 
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                string dataString = (string)e.Data.GetData(DataFormats.StringFormat);
+
+                // If the string can be converted into a Brush,  
+                // convert it and apply it to the ellipse.
+                BrushConverter converter = new BrushConverter();
+                if (converter.IsValid(dataString))
+                {
+                    Brush newFill = (Brush)converter.ConvertFromString(dataString);
+                    circleUI.Fill = newFill;
+
+                    // Set Effects to notify the drag source what effect 
+                    // the drag-and-drop operation had. 
+                    // (Copy if CTRL is pressed; otherwise, move.) 
+                    if (e.KeyStates.HasFlag(DragDropKeyStates.ControlKey))
+                    {
+                        e.Effects = DragDropEffects.Copy;
+                    }
+                    else
+                    {
+                        e.Effects = DragDropEffects.Move;
+                    }
+                }
+            }
+            e.Handled = true;
+        }
+
+        protected override void OnDragOver(DragEventArgs e)
+        {
+            base.OnDragOver(e);
+            e.Effects = DragDropEffects.None;
+
+            // If the DataObject contains string data, extract it. 
+            if (e.Data.GetDataPresent(DataFormats.StringFormat))
+            {
+                string dataString = (string)e.Data.GetData(DataFormats.StringFormat);
+
+                // If the string can be converted into a Brush, allow copying or moving.
+                BrushConverter converter = new BrushConverter();
+                if (converter.IsValid(dataString))
+                {
+                    // Set Effects to notify the drag source what effect 
+                    // the drag-and-drop operation will have. These values are  
+                    // used by the drag source's GiveFeedback event handler. 
+                    // (Copy if CTRL is pressed; otherwise, move.) 
+                    if (e.KeyStates.HasFlag(DragDropKeyStates.ControlKey))
+                    {
+                        e.Effects = DragDropEffects.Copy;
+                    }
+                    else
+                    {
+                        e.Effects = DragDropEffects.Move;
+                    }
+                }
+            }
+            e.Handled = true;
+        }
     }
 }
