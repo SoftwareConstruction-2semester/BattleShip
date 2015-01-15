@@ -194,3 +194,7 @@ Thumbs.db
 obj/
 [Rr]elease*/
 [Tt]est[Rr]esult*
+BattleShips/bin/Debug/BattleShips.exe
+BattleShips/bin/Debug/BattleShips.pdb
+BattleShips/obj/Debug/BattleShips.exe
+BattleShips/obj/Debug/BattleShips.pdb
