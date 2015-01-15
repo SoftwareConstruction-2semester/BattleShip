@@ -19,3 +19,26 @@ C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\MainWindow.g.
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\MainWindow.baml
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\Ship.baml
 C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\Views\Ship.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\bin\Debug\BattleShips.exe.config
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips.exe
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips.pdb
+D:\projects\visualStudio2013\BattleShip\BattleShips\bin\Debug\BattleShips.exe
+D:\projects\visualStudio2013\BattleShip\BattleShips\bin\Debug\BattleShips.pdb
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips.csprojResolveAssemblyReference.cache
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Cirlce.baml
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Destroyer.baml
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Ship.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Cirlce.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Destroyer.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\MainWindow.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\App.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips_MarkupCompile.cache
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips_MarkupCompile.lref
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Ship.baml
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\MainWindow.baml
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips.g.resources
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips.Properties.Resources.resources
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips.csproj.GenerateResource.Cache
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Missile.baml
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Missile.g.cs

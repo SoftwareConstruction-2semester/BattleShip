@@ -13,6 +13,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BattleShips.Views;
 
 namespace BattleShips
 {
@@ -84,6 +85,15 @@ namespace BattleShips
             }
 
             
+        }
+
+        private void CanvasMyShots_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TextBlockStatusBar.Text = "Missile fired: " + e.GetPosition(CanvasMyShots);
+            Missile missile = new Missile();
+            CanvasMyShots.Children.Add(missile);
+            Canvas.SetLeft(missile, (int)(e.GetPosition(CanvasMyShots).X / 40) * 40);
+            Canvas.SetTop(missile, (int)(e.GetPosition(CanvasMyShots).Y / 40) * 40);
         }
 
    }

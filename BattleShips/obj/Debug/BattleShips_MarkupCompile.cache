@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\obj\Debug\
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\
 BattleShips
 none
 false
 DEBUG;TRACE
-C:\Users\Ebbe Vang\Desktop\BattleShips\BattleShips\App.xaml
-4277399555
+D:\projects\visualStudio2013\BattleShip\BattleShips\App.xaml
+5-750143178
 
-92021338277
+10143022856
 141012385901
-Views\Ship.xaml;Views\Cirlce.xaml;Views\Destroyer.xaml;Views\MainWindow.xaml;
+Views\Missile.xaml;Views\Ship.xaml;Views\Cirlce.xaml;Views\Destroyer.xaml;Views\MainWindow.xaml;
 
 False
 
