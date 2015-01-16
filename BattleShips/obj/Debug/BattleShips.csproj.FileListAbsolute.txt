@@ -42,3 +42,5 @@ D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips.Proper
 D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips.csproj.GenerateResource.Cache
 D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Missile.baml
 D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\Views\Missile.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\obj\Debug\BattleShips_Content.g.cs
+D:\projects\visualStudio2013\BattleShip\BattleShips\bin\Debug\Views\sounds\bomb-falling-and-exploding-01.wav
