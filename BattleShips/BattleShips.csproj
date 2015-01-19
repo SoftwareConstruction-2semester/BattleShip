@@ -76,6 +76,7 @@
     <Compile Include="Models\MisileBoard.cs" />
     <Compile Include="Models\Ship.cs" />
     <Compile Include="Models\ShipBoard.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Views\Missile.xaml.cs">
       <DependentUpon>Missile.xaml</DependentUpon>
     </Compile>

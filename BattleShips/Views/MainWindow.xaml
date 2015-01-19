@@ -1,8 +1,13 @@
-﻿<Window x:Class="BattleShips.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="551" Width="1016.5"
-        xmlns:local="clr-namespace:BattleShips" >
+        xmlns:local="clr-namespace:BattleShips" xmlns:Views="clr-namespace:BattleShips.Views" x:Class="BattleShips.MainWindow"
+        
+    Title="MainWindow" Height="551" Width="1016.5"
+        >
+    <Window.DataContext>
+        <Views:MainViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -20,7 +25,7 @@
         </StackPanel>
         <Label Content="Your Ships" Grid.Column="1"/>
         <Canvas x:Name="CanvasMyShips" Grid.Column="1" Width="400" Height="400" Margin="10  "
-            Background="Bisque" AllowDrop="True" DragOver="panel_DragOver" Drop="panel_Drop" >
+			Background="Bisque" AllowDrop="True" DragOver="panel_DragOver" Drop="panel_Drop" >
             <Line X1="40" Y1="0" X2="40" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="80" Y1="0" X2="80" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="120" Y1="0" X2="120" Y2="400" Stroke="Coral" StrokeThickness="1" />
@@ -42,7 +47,10 @@
         </Canvas>
         <Label Content="Your Missiles" Grid.Column="2"/>
         <Canvas x:Name="CanvasMyShots" Grid.Column="2" Width="400" Height="400" Margin="10"
-            Background="Bisque" MouseDown="CanvasMyShots_MouseDown" >
+			Background="Bisque" >
+            <Canvas.InputBindings>
+                <MouseBinding Gesture="LeftClick" Command="{Binding FireMisile}"></MouseBinding>
+            </Canvas.InputBindings>
             <Line X1="40" Y1="0" X2="40" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="80" Y1="0" X2="80" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="120" Y1="0" X2="120" Y2="400" Stroke="Coral" StrokeThickness="1" />
@@ -63,10 +71,10 @@
             <Line X1="0" Y1="360" X2="400" Y2="360" Stroke="Coral" StrokeThickness="1" />
         </Canvas>
 
-        <StatusBar Grid.Row="1" Grid.ColumnSpan="3" Name="McSBar" Height="20" VerticalAlignment="Bottom"  
-           Background="LightBlue" >
+        <StatusBar Grid.Row="1" Grid.ColumnSpan="3" x:Name="McSBar" Height="20" VerticalAlignment="Bottom"  
+			Background="LightBlue" >
             <StatusBarItem>
-                <TextBlock x:Name="TextBlockStatusBar" Text="Please drag your ships into position and press start the game..."/>
+                <TextBlock x:Name="TextBlockStatusBar" Text="{Binding StatusBarString, Mode=TwoWay}"/>
             </StatusBarItem>
         </StatusBar>
     </Grid>
