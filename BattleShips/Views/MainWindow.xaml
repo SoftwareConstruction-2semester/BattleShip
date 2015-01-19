@@ -14,7 +14,7 @@
             <ColumnDefinition Width="420"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Background="Beige" AllowDrop="True" DragOver="panel_DragOver" Drop="panel_Drop">
-            <local:Ship Margin="2" ImgSrc="images/Carrier.bmp" />
+            <local:Ship Margin="1,2,2.8,2" ImgSrc="images/Carrier.bmp" />
             <local:Ship Margin="2" ImgSrc="images/Destroyer.bmp"/>
             <Button Content="Start Game" Margin="2"/>
         </StackPanel>

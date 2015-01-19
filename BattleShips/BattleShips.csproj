@@ -79,6 +79,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\Board.cs" />
+    <Compile Include="Models\Misile.cs" />
+    <Compile Include="Models\MisileBoard.cs" />
+    <Compile Include="Models\Ship.cs" />
+    <Compile Include="Models\ShipBoard.cs" />
     <Compile Include="Views\Missile.xaml.cs">
       <DependentUpon>Missile.xaml</DependentUpon>
     </Compile>
@@ -132,7 +137,6 @@
     <Resource Include="Views\images\Carrier.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
