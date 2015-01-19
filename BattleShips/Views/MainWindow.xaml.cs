@@ -87,17 +87,7 @@ namespace BattleShips
             
         }
 
-        private void CanvasMyShots_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"views\sounds\bomb-falling-and-exploding-01.wav");
-            player.Play();
-
-            TextBlockStatusBar.Text = "Missile fired: " + e.GetPosition(CanvasMyShots);
-            Missile missile = new Missile();
-            CanvasMyShots.Children.Add(missile);
-            Canvas.SetLeft(missile, (int)(e.GetPosition(CanvasMyShots).X / 40) * 40);
-            Canvas.SetTop(missile, (int)(e.GetPosition(CanvasMyShots).Y / 40) * 40);
-        }
+        
 
    }
 }
