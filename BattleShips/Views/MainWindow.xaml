@@ -49,7 +49,7 @@
         <Canvas x:Name="CanvasMyShots" Grid.Column="2" Width="400" Height="400" Margin="10"
 			Background="Bisque" >
             <Canvas.InputBindings>
-                <MouseBinding Gesture="LeftClick" Command="{Binding FireMisile}"></MouseBinding>
+                <MouseBinding Gesture="LeftClick" Command="{Binding FireMisile}" CommandParameter="{Binding ElementName=CanvasMyShots}"></MouseBinding>
             </Canvas.InputBindings>
             <Line X1="40" Y1="0" X2="40" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="80" Y1="0" X2="80" Y2="400" Stroke="Coral" StrokeThickness="1" />

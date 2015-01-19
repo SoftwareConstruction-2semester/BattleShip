@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media.Converters;
 using BattleShips.Annotations;
+using Point = System.Windows.Point;
 
 namespace BattleShips.Views
 {
@@ -79,10 +82,12 @@ namespace BattleShips.Views
 
         public void Execute(object parameter)
         {
+            Canvas canvas = (Canvas) parameter;
+            Point point = Mouse.GetPosition(canvas);
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"views\sounds\bomb-falling-and-exploding-01.wav");
             player.Play();
 
-            _mainViewModel.StatusBarString = "BANG!";
+            _mainViewModel.StatusBarString = "CLICK " + point;
             
 
             //MainWindow.TextBlockStatusBar.Text = "Missile fired: " + e.GetPosition(CanvasMyShots);
