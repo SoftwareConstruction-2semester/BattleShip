@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
@@ -16,6 +17,20 @@ namespace BattleShips.Views
     {
         private ICommand _fireMisileCommand;
         private string _statusBarString;
+        private ObservableCollection<Ship> _shipsOnGrid;
+        private ObservableCollection<Ship> _shipsOutsideGrid;
+
+        public ObservableCollection<Ship> ShipsOnGrid
+        {
+            get { return _shipsOnGrid; }
+            set { _shipsOnGrid = value; }
+        }
+
+        public ObservableCollection<Ship> ShipsOutsideGrid
+        {
+            get { return _shipsOutsideGrid; }
+            set { _shipsOutsideGrid = value; }
+        }
 
         public String StatusBarString
         {
