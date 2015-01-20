@@ -53,9 +53,6 @@
             <Canvas.InputBindings>
                 <MouseBinding Gesture="LeftClick" Command="{Binding FireMisile}" CommandParameter="{Binding ElementName=CanvasMyShots}"></MouseBinding>
             </Canvas.InputBindings>
-            <ItemsControl ItemsSource="{Binding ShipsOnGrid}">                    
-                <Image Source="{Binding }"></Image>
-            </ItemsControl>
             <Line X1="40" Y1="0" X2="40" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="80" Y1="0" X2="80" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="120" Y1="0" X2="120" Y2="400" Stroke="Coral" StrokeThickness="1" />
