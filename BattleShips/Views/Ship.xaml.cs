@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace BattleShips
 {
     /// <summary>
-    /// Interaction logic for Ship.xaml
+    /// Interaction logic for ShipModel.xaml
     /// </summary>
     public partial class Ship : UserControl
     {

@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Windows.Controls;
 using System.Windows.Input;
 using BattleShips.Annotations;
+using BattleShips.Models;
 using Point = System.Windows.Point;
 
 namespace BattleShips.ViewModels
@@ -13,16 +14,16 @@ namespace BattleShips.ViewModels
     {
         private ICommand _fireMisileCommand;
         private string _statusBarString;
-        private ObservableCollection<Ship> _shipsOnGrid;
-        private ObservableCollection<Ship> _shipsOutsideGrid;
+        private ObservableCollection<ShipModel> _shipsOnGrid;
+        private ObservableCollection<ShipModel> _shipsOutsideGrid;
 
-        public ObservableCollection<Ship> ShipsOnGrid
+        public ObservableCollection<ShipModel> ShipsOnGrid
         {
             get { return _shipsOnGrid; }
             set { _shipsOnGrid = value; }
         }
 
-        public ObservableCollection<Ship> ShipsOutsideGrid
+        public ObservableCollection<ShipModel> ShipsOutsideGrid
         {
             get { return _shipsOutsideGrid; }
             set { _shipsOutsideGrid = value; }
@@ -37,7 +38,7 @@ namespace BattleShips.ViewModels
                 OnPropertyChanged();
             }
         }
-
+      
         public ICommand FireMisile
         {
             get { return _fireMisileCommand; }
@@ -47,6 +48,13 @@ namespace BattleShips.ViewModels
         public MainViewModel()
         {
             _fireMisileCommand = new FireMisileCommand(this);
+            
+            _shipsOnGrid = new ObservableCollection<ShipModel>();
+            ShipModel shipModel = new ShipModel();
+            shipModel.Left = 40;
+            shipModel.Top = 80;
+            _shipsOnGrid.Add(shipModel);
+
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

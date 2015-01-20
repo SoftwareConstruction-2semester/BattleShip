@@ -25,7 +25,7 @@
             <local:Ship Margin="2" ImgSrc="images/Destroyer.bmp"/>
             <Button Content="Start Game" Margin="2"/>
         </StackPanel>
-        <Label Content="Your Ships" Grid.Column="1"/>
+        <Label Content="Your ShipModels" Grid.Column="1"/>
         <Canvas x:Name="CanvasMyShips" Grid.Column="1" Width="400" Height="400" Margin="10  "
 			Background="Bisque" AllowDrop="True" DragOver="panel_DragOver" Drop="panel_Drop" >
             <Line X1="40" Y1="0" X2="40" Y2="400" Stroke="Coral" StrokeThickness="1" />
@@ -54,14 +54,7 @@
                 <MouseBinding Gesture="LeftClick" Command="{Binding FireMisile}" CommandParameter="{Binding ElementName=CanvasMyShots}"></MouseBinding>
             </Canvas.InputBindings>
             <ItemsControl ItemsSource="{Binding ShipsOnGrid}">                    
-                        <ItemsControl.ItemContainerStyle>
-                            <Style TargetType="ContentPresenter">
-                                <Setter Property="Canvas.Left" Value="{Binding }"></Setter>
-                            </Style>
-                        </ItemsControl.ItemContainerStyle>
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
-                
+                <Image Source="{Binding }"></Image>
             </ItemsControl>
             <Line X1="40" Y1="0" X2="40" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="80" Y1="0" X2="80" Y2="400" Stroke="Coral" StrokeThickness="1" />
@@ -82,7 +75,6 @@
             <Line X1="0" Y1="320" X2="400" Y2="320" Stroke="Coral" StrokeThickness="1" />
             <Line X1="0" Y1="360" X2="400" Y2="360" Stroke="Coral" StrokeThickness="1" />
         </Canvas>
-
         <StatusBar Grid.Row="1" Grid.ColumnSpan="3" x:Name="McSBar" Height="20" VerticalAlignment="Bottom"  
 			Background="LightBlue" >
             <StatusBarItem>
