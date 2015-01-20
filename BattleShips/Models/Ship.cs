@@ -8,6 +8,9 @@ namespace BattleShips.Models
 {
     class Ship
     {
+        public int Left { get; set; }
+
+        public int Top { get; set; }
         public int Length { get; set; }
 
         public bool Hit { get; set; }
