@@ -51,11 +51,18 @@ namespace BattleShips.ViewModels
             _fireMisileCommand = new FireMisileCommand(this);
             
             _shipsOnGrid = new ObservableCollection<ShipModel>();
+            
+            _shipsOutsideGrid = new ObservableCollection<ShipModel>();
+
             ShipModel shipModel = new ShipModel();
             shipModel.Left = 40;
             shipModel.Top = 80;
-            shipModel.ImgSrc = new BitmapImage(new Uri(@"\Views\images\carrier.bmp", UriKind.Relative));
+            shipModel.ImgSrc = @"\Views\images\carrier.bmp";
+            //shipModel.ImgSrc = new BitmapImage(new Uri(@"\Views\images\carrier.bmp", UriKind.Relative));
             _shipsOnGrid.Add(shipModel);
+
+            ShipModel shipModel2 = new ShipModel() { ImgSrc = @"\Views\images\carrier.bmp" };
+            _shipsOutsideGrid.Add(shipModel2);
 
         }
 

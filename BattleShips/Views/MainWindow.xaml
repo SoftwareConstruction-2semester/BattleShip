@@ -20,7 +20,15 @@
             <ColumnDefinition Width="420"/>
             <ColumnDefinition Width="420"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0" Background="Beige" AllowDrop="True" DragOver="panel_DragOver" Drop="panel_Drop">
+        <StackPanel  Grid.Column="0" Background="Beige" AllowDrop="True" DragOver="panel_DragOver" Drop="panel_Drop">
+          <ItemsControl ItemsSource="{Binding ShipsOutsideGrid}" >
+              <ItemsControl.ItemTemplate>
+                  <DataTemplate>
+                      <local:Ship ImgSrc="images/Carrier.bmp" ></local:Ship>
+                  </DataTemplate>
+              </ItemsControl.ItemTemplate>
+             
+          </ItemsControl>
             <local:Ship Margin="1,2,2.8,2" ImgSrc="images/Carrier.bmp" />
             <local:Ship Margin="2" ImgSrc="images/Destroyer.bmp"/>
             <Button Content="Start Game" Margin="2"/>

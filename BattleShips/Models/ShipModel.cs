@@ -16,9 +16,9 @@ namespace BattleShips.Models
         private int _length;
         private bool _hit;
         private int[] _hits;
-        private ImageSource _imgSrc;
+        private String _imgSrc;
 
-        public ImageSource ImgSrc
+        public String ImgSrc
         {
             get { return _imgSrc; }
             set { _imgSrc = value; }
