@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using BattleShips.Annotations;
 using BattleShips.Models;
 using Point = System.Windows.Point;
@@ -53,6 +54,7 @@ namespace BattleShips.ViewModels
             ShipModel shipModel = new ShipModel();
             shipModel.Left = 40;
             shipModel.Top = 80;
+            shipModel.ImgSrc = new BitmapImage(new Uri(@"\Views\images\carrier.bmp", UriKind.Relative));
             _shipsOnGrid.Add(shipModel);
 
         }

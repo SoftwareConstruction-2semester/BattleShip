@@ -25,9 +25,16 @@
             <local:Ship Margin="2" ImgSrc="images/Destroyer.bmp"/>
             <Button Content="Start Game" Margin="2"/>
         </StackPanel>
-        <Label Content="Your ShipModels" Grid.Column="1"/>
-        <Canvas x:Name="CanvasMyShips" Grid.Column="1" Width="400" Height="400" Margin="10  "
+        <Label Content="Your Ships" Grid.Row="0" Grid.Column="1"/>
+        <Canvas x:Name="CanvasMyShips" Grid.Row="0" Grid.Column="1" Width="400" Height="400" Margin="10  "
 			Background="Bisque" AllowDrop="True" DragOver="panel_DragOver" Drop="panel_Drop" >
+            <ItemsControl ItemsSource="{Binding ShipsOnGrid, Mode=TwoWay}">
+               <ItemsControl.ItemTemplate >
+                    <DataTemplate>
+                        <local:Ship ImgSrc="images/Carrier.bmp" ></local:Ship>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
             <Line X1="40" Y1="0" X2="40" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="80" Y1="0" X2="80" Y2="400" Stroke="Coral" StrokeThickness="1" />
             <Line X1="120" Y1="0" X2="120" Y2="400" Stroke="Coral" StrokeThickness="1" />
