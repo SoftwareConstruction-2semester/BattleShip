@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using Image = System.Windows.Controls.Image;
 
 namespace BattleShips.Models
 {
@@ -16,13 +19,14 @@ namespace BattleShips.Models
         private int _length;
         private bool _hit;
         private int[] _hits;
-        private String _imgSrc;
+        private ImageSource _imgSrc;
 
-        public String ImgSrc
+        public ImageSource ImageSource
         {
             get { return _imgSrc; }
-            set { _imgSrc = value; }
         }
+
+        
 
         public int Left
         {
@@ -58,10 +62,16 @@ namespace BattleShips.Models
         {
             get { return new Thickness(Left, Top, 0, 0); }
             set
-            {
+            {   
                 Left = (int) value.Left;
                 Top = (int) value.Top;
             }
+        }
+
+        public ShipModel(String imageUrl)
+        {
+            ImageSourceConverter converter = new ImageSourceConverter();
+            this._imgSrc = (ImageSource)converter.ConvertFromString(imageUrl);
         }
     }
 }

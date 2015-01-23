@@ -1,12 +1,12 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:BattleShips" xmlns:Views="clr-namespace:BattleShips.Views"
-    xmlns:viewModels="clr-namespace:BattleShips.ViewModels"
-    x:Class="BattleShips.MainWindow"
+        xmlns:viewModels="clr-namespace:BattleShips.ViewModels"
+        xmlns:battleShips="clr-namespace:BattleShips"
+        x:Class="BattleShips.MainWindow"
         
     Title="MainWindow" Height="551" Width="1016.5"
-        >
+    >
     <Window.DataContext>
         <viewModels:MainViewModel/>
     </Window.DataContext>
@@ -24,22 +24,23 @@
           <ItemsControl ItemsSource="{Binding ShipsOutsideGrid}" >
               <ItemsControl.ItemTemplate>
                   <DataTemplate>
-                      <local:Ship ImgSrc="images/Carrier.bmp" ></local:Ship>
+                        <Image Source="{Binding ImageSource}" Height="40" Width="160" Margin="{Binding ImgMargin, Mode=TwoWay}">
+                            <Image.RenderTransform>
+                                <RotateTransform Angle="90"></RotateTransform>
+                            </Image.RenderTransform>
+                        </Image>
                   </DataTemplate>
               </ItemsControl.ItemTemplate>
-             
           </ItemsControl>
-            <local:Ship Margin="1,2,2.8,2" ImgSrc="images/Carrier.bmp" />
-            <local:Ship Margin="2" ImgSrc="images/Destroyer.bmp"/>
-            <Button Content="Start Game" Margin="2"/>
+          <Button Content="Start Game" Margin="2"/>
         </StackPanel>
         <Label Content="Your Ships" Grid.Row="0" Grid.Column="1"/>
         <Canvas x:Name="CanvasMyShips" Grid.Row="0" Grid.Column="1" Width="400" Height="400" Margin="10  "
 			Background="Bisque" AllowDrop="True" DragOver="panel_DragOver" Drop="panel_Drop" >
-            <ItemsControl ItemsSource="{Binding ShipsOnGrid, Mode=TwoWay}">
+            <ItemsControl ItemsSource="{Binding ShipsOnGrid, Mode=TwoWay}" >
                <ItemsControl.ItemTemplate >
                     <DataTemplate>
-                        <local:Ship ImgSrc="images/Carrier.bmp" ></local:Ship>
+                        <battleShips:Ship ImgSrc="images/Carrier.bmp"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

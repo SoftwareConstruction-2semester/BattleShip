@@ -56,9 +56,6 @@ namespace BattleShips
 
                     Canvas.SetLeft(_element, (int)(e.GetPosition(_panel).X / 40) * 40);
                     Canvas.SetTop(_element, (int)(e.GetPosition(_panel).Y / 40) * 40);
-                            
-                    
-                    
                     Panel _parent = (Panel)VisualTreeHelper.GetParent(_element);
 
                     if (_parent != null)

@@ -118,15 +118,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Views\images\Destroyer.bmp" />
+    <Resource Include="Views\images\Destroyer.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Views\images\Carrier.bmp" />
+    <Resource Include="Views\images\Carrier.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Resource Include="Views\images\hit.jpg" />
-    <Resource Include="Views\images\miss.jpg" />
+    <Resource Include="Views\images\hit.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\images\miss.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\sounds\bomb-falling-and-exploding-01.wav">

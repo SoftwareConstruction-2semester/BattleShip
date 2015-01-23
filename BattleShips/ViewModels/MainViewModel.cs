@@ -54,16 +54,23 @@ namespace BattleShips.ViewModels
             
             _shipsOutsideGrid = new ObservableCollection<ShipModel>();
 
-            ShipModel shipModel = new ShipModel();
+            ShipModel shipModel = new ShipModel(@"D:\projects\visualStudio2013\BattleShip\BattleShips\Views\images\Carrier.bmp");
             shipModel.Left = 40;
             shipModel.Top = 80;
-            shipModel.ImgSrc = @"\Views\images\carrier.bmp";
-            //shipModel.ImgSrc = new BitmapImage(new Uri(@"\Views\images\carrier.bmp", UriKind.Relative));
+            //shipModel.ImgSrc = @"\Views\images\carrier.bmp";
+          //  shipModel.SetImage(@"D:\projects\visualStudio2013\BattleShip\BattleShips\Views\images\Carrier.bmp");
+
+//            shipModel.ImgSrc = new BitmapImage(new Uri(@"\Views\images\arrier.bmp", UriKind.Relative));
             _shipsOnGrid.Add(shipModel);
 
-            ShipModel shipModel2 = new ShipModel() { ImgSrc = @"\Views\images\carrier.bmp" };
-            _shipsOutsideGrid.Add(shipModel2);
+            _shipsOutsideGrid.Add(shipModel);
+            //ShipModel shipModel2 = new ShipModel();
+            //shipModel2.SetImage(@"/Views/images/carrier.bmp");
+            //_shipsOutsideGrid.Add(shipModel2);
 
+            //ShipModel shipModel3 = new ShipModel();
+            //shipModel3.SetImage(@"/Views/images/carrier.bmp");
+            //_shipsOutsideGrid.Add(shipModel3);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
